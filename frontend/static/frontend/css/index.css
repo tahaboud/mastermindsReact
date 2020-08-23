@@ -1,0 +1,641 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.home-body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: url(../images/mobile-background.png) no-repeat, #1d1d1b;
+  background-size: cover;
+  background-position-x: 30%;
+  background-position-y: 0%;
+  height: 100vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.HomePage section {
+  min-height: 90vh;
+}
+
+.HomePage .logo-img {
+  -ms-grid-column-align: left;
+  justify-self: left;
+  width: 6em;
+  background: white;
+}
+
+.HomePage .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  position: relative;
+}
+
+.HomePage .nav-bar .logo {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  padding: 1em;
+}
+
+.HomePage .nav-bar .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  height: 100vh;
+  width: 100%;
+  justify-self: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: fixed;
+  right: 0;
+  top: 0vh;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #1d1d1b;
+  clip-path: circle(0em at 98% 5%);
+  -webkit-clip-path: circle(0em at 98% 5%);
+  pointer-events: none;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.HomePage .nav-bar .nav-item .nav-link {
+  letter-spacing: 0.5rem;
+  opacity: 0;
+}
+
+.HomePage .nav-bar .nav-item .nav-link a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.HomePage .nav-bar .nav-item .nav-link a:hover {
+  font-size: 1.1rem;
+}
+
+.HomePage .nav-bar .nav-item .active {
+  position: relative;
+}
+
+.HomePage .nav-bar .nav-item .active::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -1em;
+  left: -3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 10s ease-in-out;
+  transition: all 10s ease-in-out;
+}
+
+.HomePage .nav-bar .nav-item .nav-link:nth-child(1) {
+  -webkit-transition: all 0.5s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+}
+
+.HomePage .nav-bar .nav-item .nav-link:nth-child(2) {
+  -webkit-transition: all 0.5s ease 0.4s;
+  transition: all 0.5s ease 0.4s;
+}
+
+.HomePage .nav-bar .nav-item .nav-link:nth-child(3) {
+  -webkit-transition: all 0.5s ease 0.6s;
+  transition: all 0.5s ease 0.6s;
+}
+
+.HomePage .nav-bar .nav-item .nav-link:nth-child(4) {
+  -webkit-transition: all 0.5s ease 0.8s;
+  transition: all 0.5s ease 0.8s;
+}
+
+.HomePage .open {
+  -webkit-clip-path: circle(100em at 90% -10%) !important;
+  clip-path: circle(100em at 90% -10%) !important;
+  pointer-events: all !important;
+}
+
+.HomePage .fade {
+  opacity: 1 !important;
+}
+
+.HomePage .humbergur {
+  height: 2.5em;
+  width: 3em;
+  margin: auto 0 auto auto;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.HomePage .humbergur .line1 {
+  height: 3px;
+  width: 2em;
+  background-color: white;
+  margin: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.HomePage .humbergur .line2 {
+  height: 3px;
+  width: 2em;
+  background-color: white;
+  margin: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.HomePage .humbergur .line3 {
+  height: 3px;
+  width: 2em;
+  background-color: white;
+  margin: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.HomePage .toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-1em, 3px);
+  transform: rotate(-45deg) translate(-1em, 3px);
+}
+
+.HomePage .toggle .line2 {
+  opacity: 0;
+}
+
+.HomePage .toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-1em, -3px);
+  transform: rotate(45deg) translate(-1em, -3px);
+}
+
+.HomePage .welcome-section {
+  margin-left: 1em;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.HomePage .welcome-section .welcome-header {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.HomePage .welcome-section .welcome-header h1 {
+  font-weight: bold;
+}
+
+.HomePage .welcome-section .welcome-description {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.HomePage .welcome-section .welcome-description-desktop {
+  display: none;
+}
+
+.HomePage .welcome-section .welcome-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.HomePage .welcome-section .welcome-buttons .welcome-about-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.3em 1em 0.3em 1em;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.HomePage .welcome-section .welcome-buttons .welcome-about-btn:hover {
+  color: #cfcaca;
+  border-color: #cfcaca;
+}
+
+.HomePage .welcome-section .welcome-buttons .welcome-contact-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #2f80ed;
+  font-size: 1.2rem;
+  padding: 0.3em 1em 0.3em 1em;
+  border: 1px solid #2f80ed;
+  border-radius: 3px;
+}
+
+.HomePage .welcome-section .welcome-buttons .welcome-contact-btn:hover {
+  background-color: #1e4374;
+  border-color: #1e4374;
+}
+
+.HomePage .about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin: 1em;
+}
+
+.HomePage .about-section .about-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.HomePage .about-section .about-header h2 {
+  text-align: center;
+  color: white;
+  background-color: #1d1d1b;
+  width: 6em;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.HomePage .about-section .about-header::before {
+  content: " ";
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+
+.HomePage .about-section .about-text p {
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  height: 100%;
+}
+
+.HomePage .team-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.HomePage .team-section .team-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.HomePage .team-section .team-header hr {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 2em;
+  z-index: -1;
+}
+
+.HomePage .team-section .team-header h2 {
+  background-color: #1d1d1b;
+  width: 9em;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 0;
+}
+
+.HomePage .team-section .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 300px !important;
+}
+
+.HomePage .team-section .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 15em !important;
+  height: 100% !important;
+  background: white;
+}
+
+.HomePage .team-section .swiper-slide .img img {
+  -o-object-position: center;
+  object-position: center;
+  width: 100% !important;
+}
+
+.HomePage .team-section .swiper-slide .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 20%;
+}
+
+.HomePage .team-section .swiper-slide .details h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.HomePage .team-section .swiper-slide .details h3 span {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.HomePage .event-section .event-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.HomePage .event-section .event-header h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 7em;
+  background-color: #1d1d1b;
+}
+
+.HomePage .event-section .event-header::before {
+  content: " ";
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+
+.HomePage .event-section .event {
+  background: white;
+  margin: 2em 1em;
+  height: 90vh;
+}
+
+.HomePage .event-section .event .imgBox {
+  height: 50%;
+}
+
+.HomePage .event-section .event .imgBox img {
+  -o-object-fit: fill;
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+.HomePage .event-section .event .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 50%;
+  padding: 1em;
+}
+
+.HomePage .event-section .event .details h3 {
+  margin: 0 0 2em 0;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.HomePage .event-section .event .details p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.HomePage .contact-section .contact-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.HomePage .contact-section .contact-header h2 {
+  color: white;
+  background-color: #1d1d1b;
+  width: 7em;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.HomePage .contact-section .contact-header::before {
+  content: " ";
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+
+.HomePage .contact-section .contact-form form {
+  margin: 2em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.HomePage .contact-section .contact-form form label {
+  color: white;
+  font-size: 0.9rem;
+  margin: 1em 0 0.1em 0;
+  display: block;
+}
+
+.HomePage .contact-section .contact-form form input {
+  height: 1.2em;
+  width: 100%;
+  padding: 0.8em 0.2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  background-color: #181818;
+  border: none;
+  color: white;
+}
+
+.HomePage .contact-section .contact-form form textarea {
+  resize: none;
+  margin-bottom: 1em;
+  font-size: 2rem;
+  padding: 0.2em 0.2em;
+  background-color: #181818;
+  border: none;
+  color: white;
+}
+
+.HomePage .contact-section .contact-form form .button {
+  width: 100%;
+}
+
+.HomePage .contact-section .contact-form form button {
+  height: 2em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.1em;
+  background: #2f80ed;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.HomePage .contact-section .contact-form form button:hover {
+  background-color: #1e4374;
+}
+
+.HomePage footer {
+  background: white;
+  margin: 1em 0 0 0;
+}
+
+.HomePage footer .footer-rights {
+  padding: 0.1em 0 1em 0;
+}
+
+.HomePage footer .footer-rights h4 {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.HomePage footer .contact-info {
+  margin: 1em 1em 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.HomePage footer .contact-info .follow-us h5 {
+  margin: 0;
+}
+
+.HomePage footer .contact-info .follow-us a {
+  text-decoration: none;
+  color: black;
+}
+
+.HomePage footer .contact-info .follow-us a i {
+  margin: 0.2em 0.5em 0.2em 0;
+  font-size: 1.2rem;
+}
+
+.HomePage footer .contact-info .call-us h5 {
+  margin: 0;
+}
+
+.HomePage footer .contact-info .call-us h6 {
+  margin: 1em 0;
+}
+/*# sourceMappingURL=index.css.map */
+.message-invalid-feedback,
+.email-invalid-feedback,
+.name-invalid-feedback {
+  color: rgb(252, 41, 41);
+}
+
+.invalid {
+  outline: rgb(206, 42, 42) solid 1px;
+}
+
+.valid {
+  outline: rgb(30, 196, 30) solid 2px;
+}

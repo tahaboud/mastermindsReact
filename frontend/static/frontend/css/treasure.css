@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.treasure-body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: url(../images/mobile-background.png) no-repeat, #1d1d1b;
+  background-size: cover;
+  background-position-x: 30%;
+  background-position-y: 0%;
+  height: 100vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.CoursesPage section {
+  min-height: 90vh;
+}
+
+.CoursesPage .welcome-section {
+  margin-left: 1em;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.CoursesPage .welcome-section .welcome-header {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.CoursesPage .welcome-section .welcome-header h1 {
+  font-weight: bold;
+}
+
+.CoursesPage .welcome-section .welcome-description {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 2em 0;
+}
+
+.CoursesPage .welcome-section .welcome-description-desktop {
+  display: none;
+}
+
+.CoursesPage .welcome-section .welcome-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.CoursesPage .welcome-section .welcome-buttons .welcome-contribute-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #2f80ed;
+  font-size: 1.2rem;
+  padding: 0.3em 1em 0.3em 1em;
+  margin-top: 2em;
+  border: 1px solid #2f80ed;
+  border-radius: 3px;
+  width: 10em;
+  text-align: center;
+}
+
+.CoursesPage .welcome-section .welcome-buttons .welcome-contribute-btn:hover {
+  background-color: #1e4374;
+  border-color: #1e4374;
+}
+
+.CoursesPage .courses {
+  margin: 0 1em;
+}
+
+.CoursesPage .courses .level h2 {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.CoursesPage .courses .level .dropdown {
+  width: 100%;
+  height: 2em;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.CoursesPage .courses .wrapper {
+  height: 50vh;
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+.CoursesPage .courses .wrapper .title {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1em;
+}
+
+.CoursesPage .courses .select_wrap {
+  width: 100%;
+  position: relative;
+}
+
+.CoursesPage .courses .select_wrap .default_option {
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  padding: 0 0 0 1em;
+  height: 3em;
+}
+
+.CoursesPage .courses .select_wrap .default_option li {
+  list-style: none;
+}
+
+.CoursesPage .courses .select_wrap .default_option:before {
+  content: "";
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border: 2px solid;
+  border-color: transparent transparent #555555 #555555;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.CoursesPage .courses .select_wrap .select_ul {
+  position: absolute;
+  top: 3em;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.CoursesPage .courses .select_wrap .select_ul li {
+  list-style: none;
+  padding: 0 0 0 1em;
+  cursor: pointer;
+}
+
+.CoursesPage .courses .select_wrap .select_ul li:first-child:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.CoursesPage .courses .select_wrap .select_ul li:last-child:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.CoursesPage .courses .select_wrap .select_ul li:hover {
+  background: #e2dfd8;
+}
+
+.CoursesPage .courses .select_wrap .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.CoursesPage .courses .select_wrap.active .select_ul {
+  display: block;
+}
+
+.CoursesPage .courses .select_wrap.active .default_option:before {
+  top: 25px;
+  -webkit-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
+
+.CoursesPage .courses .title {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1em;
+}
+
+.CoursesPage .courses-button-div {
+  width: 100%;
+}
+
+.CoursesPage .courses-button {
+  width: 100%;
+  height: 2em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.1em;
+  background: #2f80ed;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.CoursesPage .courses-invalid-feedback {
+  color: rgb(240, 53, 53);
+  margin: 0.5em;
+  text-align: center;
+}
+
+.CoursesPage .select_wrap .invalid {
+  outline: rgb(240, 53, 53) solid 2px;
+}
+.CoursesPage .select_wrap .valid {
+  outline: rgb(38, 209, 38) solid 2px;
+}
+
+.CoursesPage .courses .drive_courses_semester1,
+.CoursesPage .courses .drive_courses_semester2 {
+  height: 30%;
+  max-height: 100%;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.CoursesPage .courses .drive_courses .frame {
+  height: 100%;
+}
+
+.CoursesPage .courses .smstr1,
+.CoursesPage .courses .smstr2 {
+  min-height: 50vh;
+}
+
+.CoursesPage footer {
+  background: white;
+  margin: 0em 0 0 0;
+  height: 10em;
+}
+
+.CoursesPage footer .footer-rights {
+  padding: 0.1em 0 1em 0;
+}
+
+.CoursesPage footer .footer-rights h4 {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.CoursesPage footer .contact-info {
+  margin: 1em 1em 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.CoursesPage footer .contact-info .follow-us h5 {
+  margin: 0;
+}
+
+.CoursesPage footer .contact-info .follow-us a {
+  text-decoration: none;
+  color: black;
+}
+
+.CoursesPage footer .contact-info .follow-us a i {
+  margin: 0.2em 0.5em 0.2em 0;
+  font-size: 1.2rem;
+}
+
+.CoursesPage footer .contact-info .call-us h5 {
+  margin: 0;
+}
+
+.CoursesPage footer .contact-info .call-us h6 {
+  margin: 1em 0;
+}
+/*# sourceMappingURL=treasure.css.map */

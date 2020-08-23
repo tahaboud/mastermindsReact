@@ -1,0 +1,240 @@
+@media screen and (min-width: 768px) {
+  .home-body {
+    background: url(../images/desktop.png) no-repeat, #1d1d1b;
+    background-size: cover;
+  }
+  .HomePage .nav-bar {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .HomePage .nav-bar .nav-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    clip-path: none;
+    -webkit-clip-path: none;
+    pointer-events: all;
+    -webkit-transition: none;
+    transition: none;
+    background-color: transparent;
+    position: relative;
+    height: 10vh;
+    width: 50%;
+  }
+  .HomePage .nav-bar .nav-item .nav-link {
+    letter-spacing: 0.4rem;
+    opacity: 1;
+  }
+  .HomePage .nav-bar .nav-item .nav-link a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .HomePage .nav-bar .nav-item .nav-link a:hover {
+    font-size: 0.8rem;
+  }
+  .HomePage .nav-bar .nav-item .nav-link:nth-child(1) {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .HomePage .nav-bar .nav-item .nav-link:nth-child(2) {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .HomePage .nav-bar .nav-item .nav-link:nth-child(3) {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .HomePage .nav-bar .nav-item .nav-link:nth-child(4) {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .HomePage .humbergur {
+    display: none;
+  }
+  .HomePage .welcome-section {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 50%;
+  }
+  .HomePage .welcome-section .welcome-description {
+    display: none;
+  }
+  .HomePage .welcome-section .welcome-description-desktop {
+    display: block;
+  }
+  .HomePage .welcome-section .welcome-description-desktop p {
+    font-size: 1rem;
+    color: white;
+  }
+  .HomePage .welcome-section .welcome-buttons {
+    margin-top: 3em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .HomePage .welcome-section .welcome-buttons .welcome-about-btn {
+    margin-right: 1em;
+    font-size: 1.5rem;
+  }
+  .HomePage .welcome-section .welcome-buttons .welcome-contact-btn {
+    margin-left: 1em;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .HomePage #aboutSection {
+    display: none;
+  }
+  .HomePage .team-section .team-header h2 {
+    width: 10em;
+    font-size: 2rem;
+  }
+  .HomePage .team-section .team-header hr {
+    display: none;
+  }
+  .HomePage .team-section .team-header::before {
+    content: " ";
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+  }
+  .HomePage .team-section .swiper-container {
+    height: 100% !important;
+  }
+  .HomePage .team-section .swiper-container .swiper-slide {
+    width: 20em !important;
+  }
+  .HomePage .team-section .swiper-container .swiper-slide .img img {
+    -o-object-position: center;
+    object-position: center;
+    width: 100% !important;
+    height: 80%;
+  }
+  .HomePage .team-section .swiper-container .swiper-slide .details h3 {
+    font-size: 1.8rem;
+  }
+  .HomePage .team-section .swiper-container .swiper-slide .details h3 span {
+    font-size: 1.3rem;
+  }
+  .HomePage .event-section .event-header h2 {
+    width: 10em;
+    font-size: 2rem;
+  }
+  .HomePage .event-section .event {
+    background: transparent;
+    height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3em;
+  }
+  .HomePage .event-section .event .imgBox {
+    height: 100%;
+    width: 100%;
+  }
+  .HomePage .event-section .event .imgBox img {
+    -o-object-fit: fill;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+  .HomePage .event-section .event .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+  }
+  .HomePage .event-section .event .details h3 {
+    text-align: left;
+    font-size: 1.8rem;
+    color: white;
+  }
+  .HomePage .event-section .event .details p {
+    text-align: left;
+    font-size: 1.4rem;
+    color: white;
+  }
+  .HomePage .event-section .event-2 .imgBox,
+  .HomePage .event-section .event-4 .imgBox {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .HomePage .event-section .event-2 .details,
+  .HomePage .event-section .event-4 .details {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .HomePage .contact-section .contact-header h2 {
+    width: 10em;
+    font-size: 2rem;
+  }
+  .HomePage .contact-section .contact-form form input,
+  .HomePage .contact-section .contact-form form textarea {
+    background-color: #2f3734;
+  }
+  .HomePage .contact-section .contact-form form .user-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .HomePage .contact-section .contact-form form .user-info .name {
+    width: 45%;
+  }
+  .HomePage .contact-section .contact-form form .user-info .email {
+    width: 45%;
+  }
+  .HomePage .contact-section .contact-form form .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .HomePage .contact-section .contact-form form .button button {
+    width: 10em;
+    color: white;
+  }
+  .HomePage footer {
+    height: 11em;
+  }
+  .HomePage footer .footer-rights h4 {
+    font-size: 1.1rem;
+  }
+  .HomePage footer .contact-info .follow-us h5 {
+    font-size: 1rem;
+  }
+  .HomePage footer .contact-info .follow-us a i {
+    font-size: 2rem;
+  }
+  .HomePage footer .contact-info .call-us h5 {
+    font-size: 1rem;
+  }
+  .HomePage footer .contact-info .call-us h6 {
+    font-size: 1rem;
+    margin: 1em 0;
+  }
+}
+/*# sourceMappingURL=index-2.css.map */
