@@ -118,7 +118,7 @@ export class Team extends Component {
                 <div className="details">
                   <h3>
                     Younes Labri <br />
-                    <span>exterior relations</span>
+                    <span>Exterior Relations</span>
                   </h3>
                 </div>
               </div>
