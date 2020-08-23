@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { HashLink } from "react-router-hash-link";
 
 export class Header extends Component {
+  componentDidMount() {
+    document.body.style.overflowY = "visible";
+  }
   navSlide = () => {
     const burger = document.querySelector(".humbergur");
     const navLinks = document.querySelector(".nav-item");
