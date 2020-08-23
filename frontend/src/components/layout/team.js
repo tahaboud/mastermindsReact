@@ -82,34 +82,43 @@ export class Team extends Component {
               </div>
               <div className="swiper-slide">
                 <div className="img">
-                  <img src="http://lorempixel.com/600/600/nature/5" alt="" />
+                  <img
+                    src={"../../static/frontend/images/LokmanBoufenar.jpg"}
+                    alt=""
+                  />
                 </div>
                 <div className="details">
                   <h3>
-                    John Doe <br />
-                    <span>Web Designer</span>
+                    lokman Boufenar <br />
+                    <span>Head of H.R</span>
                   </h3>
                 </div>
               </div>
               <div className="swiper-slide">
                 <div className="img">
-                  <img src="http://lorempixel.com/600/600/nature/6" alt="" />
+                  <img
+                    src={"../../static/frontend/images/NadirZedek.jpg"}
+                    alt=""
+                  />
                 </div>
                 <div className="details">
                   <h3>
-                    John Doe <br />
-                    <span>Web Designer</span>
+                    Nadir Zedek <br />
+                    <span>Club President</span>
                   </h3>
                 </div>
               </div>
               <div className="swiper-slide">
                 <div className="img">
-                  <img src="http://lorempixel.com/600/600/nature/7" alt="" />
+                  <img
+                    src={"../../static/frontend/images/YounesLabri.jpg"}
+                    alt=""
+                  />
                 </div>
                 <div className="details">
                   <h3>
-                    John Doe <br />
-                    <span>Web Designer</span>
+                    Younes Labri <br />
+                    <span>exterior relations</span>
                   </h3>
                 </div>
               </div>
