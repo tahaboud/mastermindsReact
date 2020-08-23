@@ -100,25 +100,18 @@ export class Treasure extends Component {
           ifram.setAttribute("frameBorder", "0");
           document.querySelector(".drive_courses_semester2").appendChild(ifram);
         })
-        .catch((err) => {
-          console.log(err);
-        });
+        .catch((err) => {});
       axios
         .get(`/url/${ids + 1}`)
         .then((res) => {
           let ifram = document.createElement("iframe");
-          ifram.setAttribute(
-            "src",
-            "https://drive.google.com/embeddedfolderview?id=1VIp1sDeMGFUBrvOz4ISXw0dZA-dsz3iz#list"
-          );
+          ifram.setAttribute("src", res.data.url);
           ifram.setAttribute("height", "100%");
           ifram.setAttribute("width", "100%");
           ifram.setAttribute("frameBorder", "0");
           document.querySelector(".drive_courses_semester1").appendChild(ifram);
         })
-        .catch((err) => {
-          console.log(err);
-        });
+        .catch((err) => {});
     }
   };
 
